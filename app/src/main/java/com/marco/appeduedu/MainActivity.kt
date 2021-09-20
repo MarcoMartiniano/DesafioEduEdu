@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import com.marco.appeduedu.ui.AddStudentScreen
 import com.marco.appeduedu.ui.theme.EduEduTheme
 import com.marco.appeduedu.ui.HomeScreen
+import com.marco.appeduedu.ui.StudentCardView
 
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContent {
             EduEduTheme {
                 //HomeScreen()
-                AddStudentScreen()
+                //AddStudentScreen()
+                StudentCardView()
             }
         }
     }

@@ -1,9 +1,11 @@
 package com.marco.appeduedu.ui
 
 
+import android.util.LayoutDirection.*
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.GenericShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
@@ -12,10 +14,16 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Rect
+import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.graphics.*
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
+import androidx.compose.ui.unit.Density
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.marco.appeduedu.R
 import com.marco.appeduedu.ui.theme.LightBlue
 
@@ -35,9 +43,8 @@ fun HomeScreen() {
         }
 
     }
-
-
 }
+
 @Composable
 fun BackgroundSection(){
     Box(
@@ -180,32 +187,40 @@ fun ButtonsSection(){
                 Modifier.clickable {  }
                     .size(300.dp,50.dp),
                 alignment = Alignment.Center
-
             )
-        }
 
 
 /*
-        Button(
-            colors = ButtonDefaults.buttonColors(backgroundColor = ),
-            shape = Shapes.large,
-            onClick = { /*TODO*/ },
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(start = 31.dp, end = 30.dp)
-                .height(50.dp)
-                .shadow(10.dp, Shapes.large)
+            val shapeButton = object : Shape{
+                override fun createOutline(
+                    size: Size,
+                    layoutDirection: LayoutDirection,
+                    density: Density
+                ): Outline {
+                    val p1 = Path().apply {
+                        //addOval(Rect(0f, 0f, size.width + 1, size.height + 1))
+                    }
+                    return Outline.Generic(p1)
+                }
+
+            }
+            Button(
+                colors = ButtonDefaults.buttonColors(backgroundColor = LightBlue),
+                shape = shapeButton,
+                onClick = { /*TODO*/ },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 31.dp, end = 30.dp)
+                    .height(50.dp)
+
             ) {
                 Text(text = "Login",
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.White
-            )
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
+                )
+            }
+*/
         }
-        */
     }
-
-
-
-    
 }

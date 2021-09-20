@@ -5,6 +5,8 @@ import androidx.compose.ui.graphics.Color
 val HeaderWhite = Color(0xFFF7F7F7)
 val LightBlue = Color(0xFF47CDFF)
 val LightGrey= Color(0xFFA5A5A5)
+val FontGrey= Color(0xFF616161)
+
 
 val DeepBlue = Color(0xff06164c)
 val ButtonBlue = Color(0xff505cf3)
