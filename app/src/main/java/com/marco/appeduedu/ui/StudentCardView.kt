@@ -54,5 +54,5 @@ fun StudentCardView() {
         }
 
     }
-    
+
 }

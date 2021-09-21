@@ -31,7 +31,7 @@ fun AddStudentScreen(){
             .fillMaxSize()
     ) {
         Column {
-            HeaderSection()
+            HeaderSectionAddStudent()
             EditTextNameStudentSection()
             AvatarImageSection()
             ButtonChangeAvaterSection()
@@ -49,9 +49,9 @@ fun AddStudentScreen(){
 }
 
 
-//LogoSection
+//HearSection
 @Composable
-fun HeaderSection() {
+fun HeaderSectionAddStudent() {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Start,

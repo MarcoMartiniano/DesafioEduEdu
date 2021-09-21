@@ -7,6 +7,7 @@ import com.marco.appeduedu.ui.AddStudentScreen
 import com.marco.appeduedu.ui.theme.EduEduTheme
 import com.marco.appeduedu.ui.HomeScreen
 import com.marco.appeduedu.ui.StudentCardView
+import com.marco.appeduedu.ui.StudentSelectScreen
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +17,8 @@ class MainActivity : AppCompatActivity() {
             EduEduTheme {
                 //HomeScreen()
                 //AddStudentScreen()
-                StudentCardView()
+                //StudentCardView()
+                StudentSelectScreen()
             }
         }
     }
