@@ -1,4 +1,4 @@
-package com.marco.appeduedu.ui.theme
+package com.marco.appeduedu.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
